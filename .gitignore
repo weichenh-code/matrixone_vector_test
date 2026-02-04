@@ -7,6 +7,7 @@
 *.fatbin
 *.py
 !python_vs_v1/*.py
+!python_vs_v2/*.py
 *.sh
 bin/
 y.go
