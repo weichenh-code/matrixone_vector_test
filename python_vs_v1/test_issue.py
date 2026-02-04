@@ -140,8 +140,8 @@ def search(dataset_vec: np.ndarray,
     
     # Go: neighbors, distances 张量创建
     # Go: brute_force.SearchIndex(resource, *index, &queries, &neighbors, &distances)
+    # Python API: search(index, queries, k, neighbors=None, distances=None, resources=None)
     distances_gpu, neighbors_gpu = brute_force.search(
-        brute_force.SearchParams(),
         index,
         queries,
         limit
